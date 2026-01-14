@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "name": "Nam Hoàng",
+            "content": "Hàng đẹp, giá cả hợp lý. Rất hài lòng với dịch vụ.",
+            "avatar": "https://randomuser.me/api/portraits/men/32.jpg"
+        },
+        {
+            "name": "Trần Duy Anh",
+            "content": "Vàng xịn, uy tín lâu năm tại phố Hàng Bồ.",
+            "avatar": "https://randomuser.me/api/portraits/men/45.jpg"
+        },
+        {
+            "name": "Thắng Vũ",
+            "content": "Vị trí chính xác, cửa hàng rất uy tín, giúp tôi tìm thấy đồ ưng ý.",
+            "avatar": "https://randomuser.me/api/portraits/men/22.jpg"
+        }
+    ]
+}

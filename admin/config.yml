@@ -1,0 +1,49 @@
+backend:
+  name: github
+  repo: nghiavu2011/ngoc-chau-jewelry
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "assets/images"
+
+collections:
+  - name: "settings"
+    label: "Cài đặt chung"
+    files:
+      - name: "general"
+        label: "Thông tin cửa hàng"
+        file: "data/settings.json"
+        fields:
+          - {label: "Số điện thoại", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Địa chỉ", name: "address", widget: "string"}
+
+  - name: "content"
+    label: "Quản lý nội dung"
+    files:
+      - name: "products_list"
+        label: "Danh sách sản phẩm"
+        file: "data/products.json"
+        fields:
+          - name: "items"
+            label: "Các sản phẩm"
+            widget: "list"
+            fields:
+              - {label: "Tên sản phẩm", name: "title", widget: "string"}
+              - {label: "Giá niêm yết", name: "price", widget: "string"}
+              - {label: "Hình ảnh (Mặt trước)", name: "image_front", widget: "image"}
+              - {label: "Hình ảnh (Mặt sau)", name: "image_back", widget: "image"}
+              - {label: "Nhãn (Tag)", name: "tag", widget: "select", options: ["Mới", "Bán chạy", "Giảm giá"]}
+              - {label: "Đánh giá (1-5)", name: "rating", widget: "number", value_type: "int", min: 1, max: 5}
+
+      - name: "testimonials_list"
+        label: "Đánh giá khách hàng"
+        file: "data/testimonials.json"
+        fields:
+          - name: "items"
+            label: "Các đánh giá"
+            widget: "list"
+            fields:
+              - {label: "Tên khách hàng", name: "name", widget: "string"}
+              - {label: "Nội dung đánh giá", name: "content", widget: "text"}
+              - {label: "Ảnh đại diện", name: "avatar", widget: "image"}

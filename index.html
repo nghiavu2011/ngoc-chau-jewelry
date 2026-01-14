@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Netlify Identity Widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -233,90 +235,8 @@
                         </div>
                     </aside>
 
-                    <div class="products-grid">
-                        <!-- Product Item 1 -->
-                        <div class="product-item reveal">
-                            <div class="product-img">
-                                <img src="assets/images/ring_wedding.png" alt="Nhẫn Kim Cương" class="img-front">
-                                <img src="assets/images/ring_wedding.png" alt="Nhẫn Kim Cương Alt" class="img-back">
-                                <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
-                                <button class="btn-add-cart">Thêm vào giỏ</button>
-                            </div>
-                            <div class="product-info">
-                                <h3 class="serif">Nhẫn Kim Cương Eternity</h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p class="price">45,000,000đ</p>
-                            </div>
-                        </div>
-                        <!-- Product Item 2 -->
-                        <div class="product-item reveal">
-                            <div class="product-img">
-                                <img src="assets/images/necklace_pearl.png" alt="Dây Chuyền Ngọc Trai"
-                                    class="img-front">
-                                <img src="assets/images/necklace_pearl.png" alt="Dây Chuyền Ngọc Trai Alt"
-                                    class="img-back">
-                                <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
-                                <button class="btn-add-cart">Thêm vào giỏ</button>
-                            </div>
-                            <div class="product-info">
-                                <h3 class="serif">Dây Chuyền Ngọc Trai Tahiti</h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <p class="price">22,500,000đ</p>
-                            </div>
-                        </div>
-                        <!-- Product Item 3 -->
-                        <div class="product-item reveal">
-                            <div class="product-img">
-                                <img src="assets/images/earrings_gold.png" alt="Hoa Tai Vàng" class="img-front">
-                                <img src="assets/images/earrings_gold.png" alt="Hoa Tai Vàng Alt" class="img-back">
-                                <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
-                                <button class="btn-add-cart">Thêm vào giỏ</button>
-                            </div>
-                            <div class="product-info">
-                                <h3 class="serif">Hoa Tai Vàng 18K</h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                </div>
-                                <p class="price">12,900,000đ</p>
-                            </div>
-                        </div>
-                        <!-- Product Item 4 -->
-                        <div class="product-item reveal">
-                            <div class="product-img">
-                                <img src="assets/images/bracelet_jade.png" alt="Vòng Tay Cẩm Thạch" class="img-front">
-                                <img src="assets/images/bracelet_jade.png" alt="Vòng Tay Cẩm Thạch Alt"
-                                    class="img-back">
-                                <button class="btn-wishlist"><i class="fa-regular fa-heart"></i></button>
-                                <button class="btn-add-cart">Thêm vào giỏ</button>
-                            </div>
-                            <div class="product-info">
-                                <h3 class="serif">Vòng Tay Tinh Xảo</h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p class="price">21,000,000đ</p>
-                            </div>
-                        </div>
+                    <div class="products-grid" id="products-container">
+                        <!-- Dữ liệu sẽ được đổ vào đây từ CMS -->
                     </div>
                 </div>
             </div>
@@ -377,37 +297,8 @@
                     <h2 class="serif">Khách Hàng Nói Gì</h2>
                     <div class="title-line"></div>
                 </div>
-                <div class="testimonial-grid reveal">
-                    <div class="testimonial-card">
-                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                        <p>"Hàng đẹp, giá cả hợp lý. Rất hài lòng với dịch vụ."</p>
-                        <div class="customer-mini">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
-                            <div>
-                                <h5>Nam Hoàng</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                        <p>"Vàng xịn, uy tín lâu năm tại phố Hàng Bồ."</p>
-                        <div class="customer-mini">
-                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Customer">
-                            <div>
-                                <h5>Trần Duy Anh</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                        <p>"Vị trí chính xác, cửa hàng rất uy tín, giúp tôi tìm thấy đồ ưng ý."</p>
-                        <div class="customer-mini">
-                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Customer">
-                            <div>
-                                <h5>Thắng Vũ</h5>
-                            </div>
-                        </div>
-                    </div>
+                <div class="testimonial-grid reveal" id="testimonials-container">
+                    <!-- Dữ liệu sẽ được đổ vào đây từ CMS -->
                 </div>
             </div>
         </section>
@@ -485,6 +376,17 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
